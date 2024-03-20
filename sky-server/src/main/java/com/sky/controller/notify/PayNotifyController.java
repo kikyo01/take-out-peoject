@@ -31,9 +31,10 @@ public class PayNotifyController {
 
     /**
      * 支付成功回调
-     *
+     * TODO跳过支付的话没有请求到paySuccess
      * @param request
      */
+
     @RequestMapping("/paySuccess")
     public void paySuccessNotify(HttpServletRequest request, HttpServletResponse response) throws Exception {
         //读取数据
